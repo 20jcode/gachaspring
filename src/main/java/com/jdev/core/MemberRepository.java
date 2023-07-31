@@ -11,7 +11,7 @@ public interface MemberRepository {
 	// save하나로 create와 update를 전부 담당하는 것이 맞을까?
 	// MemberRepository의 사용자의 입장(어쩌면 나)에서는 기존의 유저가 있는 지 없는 지 구별해야할까?
 	// 해당 관점에서는 필요없다고 생각함.
-	// save는 주로 사용자의 신규 회원가입을 제공하거나, 회원 수정 기능을 제공할때
+	// save는 주로 사용자의 신규 회원가입을 제공하거나, 회원 수정 기능을 제공할때1
 	// 중복에 대한 확인은 MemberRepository의 구현체가 알아서 책임져야함.
 	// 따라서 MemberRepository의 client입장에서는 구분할 필요가 없다.
 	void save(Member member);
